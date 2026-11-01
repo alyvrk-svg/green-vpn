@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080d0a">
+<title>GREEN VPN | فروشگاه اشتراک</title>
+<style>
+*{box-sizing:border-box}
+:root{--green:#35e99a;--bg:#080d0a;--card:#111a14;--muted:#9aa99f}
+body{margin:0;background:var(--bg);color:#fff;font-family:Tahoma,Arial,sans-serif}
+button{font-family:inherit;cursor:pointer}
+.container{max-width:520px;margin:auto;padding:22px 18px 100px}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 0 28px}
+.logo{font-size:23px;font-weight:900;color:var(--green);letter-spacing:1px}
+.status{font-size:11px;color:var(--green);border:1px solid #286b48;padding:8px 12px;border-radius:30px}
+.hero{padding:30px 22px;border:1px solid #254632;border-radius:25px;background:radial-gradient(ellipse at top left,#183a27 0%,#101a13 48%,#101510 100%);overflow:hidden}
+.tag{font-size:11px;color:var(--green);background:#1c3828;padding:8px 12px;border-radius:30px;display:inline-block}
+h1{font-size:32px;line-height:1.65;margin:22px 0 8px}
+h1 span{color:var(--green)}
+.desc{color:var(--muted);font-size:13px;line-height:2.2}
+.primary{background:var(--green);color:#06120a;border:0;border-radius:13px;padding:16px 20px;font-size:14px;font-weight:bold;width:100%;margin-top:18px}
+.section-title{font-size:19px;margin:35px 0 7px}
+.sub{font-size:12px;color:var(--muted);margin-bottom:19px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:22px}
+.feature,.plan{background:var(--card);border:1px solid #26372b;border-radius:17px;padding:17px}
+.feature-icon{font-size:22px;color:var(--green)}
+.feature b{display:block;margin:10px 0;font-size:13px}
+.feature small{color:var(--muted);font-size:11px}
+.plans{display:grid;gap:12px}
+.plan{position:relative}
+.plan-name{font-weight:bold;font-size:15px}
+.plan-detail{color:var(--muted);font-size:11px;margin-top:9px}
+.price{color:var(--green);font-size:17px;font-weight:bold;margin-top:15px}
+.plan button{width:100%;background:#1b2b20;border:1px solid #315b3d;color:var(--green);border-radius:10px;padding:13px;margin-top:15px}
+.popular{border-color:var(--green)}
+.popular-label{position:absolute;left:14px;top:14px;color:var(--green);font-size:10px}
+.note{color:var(--muted);font-size:11px;line-height:2;margin-top:24px}
+footer{text-align:center;border-top:1px solid #202c23;padding:25px 0;color:#829187;font-size:11px;margin-top:35px}
+nav{position:fixed;bottom:0;left:0;right:0;background:#101711;border-top:1px solid #28392d;display:flex;justify-content:space-around;padding:14px 5px max(14px,env(safe-area-inset-bottom));z-index:5}
+nav a{color:#9aa99f;text-decoration:none;font-size:11px;text-align:center}
+nav a:first-child{color:var(--green)}
+nav span{display:block;font-size:18px;margin-bottom:5px}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">GREEN VPN.</div>
+<div class="status">● فروشگاه فعال</div>
+</header>
+
+<section class="hero">
+<div class="tag">PREMIUM VPN SERVICE</div>
+<h1>اتصالی آزاد،<br><span>تجربه‌ای متفاوت.</span></h1>
+<p class="desc">اشتراک مورد نظرت رو انتخاب کن و با چند قدم ساده سفارش خودت رو ثبت کن.</p>
+<button class="primary" onclick="document.getElementById('plans').scrollIntoView({behavior:'smooth'})">مشاهده اشتراک‌ها ←</button>
+</section>
+
+<div class="features">
+<div class="feature">
+<div class="feature-icon">◈</div>
+<b>حریم خصوصی</b>
+<small>تجربه اتصال با توجه به امنیت</small>
+</div>
+<div class="feature">
+<div class="feature-icon">ϟ</div>
+<b>اتصال پایدار</b>
+<small>سرویس متناسب با نیاز شما</small>
+</div>
+<div class="feature">
+<div class="feature-icon">♧</div>
+<b>پشتیبانی</b>
+<small>ارتباط با تیم فروش</small>
+</div>
+<div class="feature">
+<div class="feature-icon">✓</div>
+<b>تحویل دستی</b>
+<small>پس از بررسی پرداخت</small>
+</div>
+</div>
+
+<section id="plans">
+<h2 class="section-title">اشتراک‌های GREEN VPN</h2>
+<p class="sub">پلن مناسب خودت رو انتخاب کن.</p>
+<div class="plans">
+<div class="plan">
+<div class="plan-name">اشتراک یک ماهه</div>
+<div class="plan-detail">مناسب استفاده کوتاه‌مدت</div>
+<div class="price">قیمت به‌زودی</div>
+<button onclick="choose('یک ماهه')">انتخاب اشتراک</button>
+</div>
+<div class="plan popular">
+<div class="popular-label">پیشنهاد ویژه</div>
+<div class="plan-name">اشتراک سه ماهه</div>
+<div class="plan-detail">انتخابی مناسب برای استفاده مداوم</div>
+<div class="price">قیمت به‌زودی</div>
+<button onclick="choose('سه ماهه')">انتخاب اشتراک</button>
+</div>
+<div class="plan">
+<div class="plan-name">اشتراک شش ماهه</div>
+<div class="plan-detail">برای استفاده بلندمدت</div>
+<div class="price">قیمت به‌زودی</div>
+<button onclick="choose('شش ماهه')">انتخاب اشتراک</button>
+</div>
+<div class="plan">
+<div class="plan-name">اشتراک یک ساله</div>
+<div class="plan-detail">اشتراک سالانه</div>
+<div class="price">قیمت به‌زودی</div>
+<button onclick="choose('یک ساله')">انتخاب اشتراک</button>
+</div>
+</div>
+</section>
+
+<p class="note">پرداخت به‌صورت کارت‌به‌کارت انجام می‌شود. سفارش پس از بررسی رسید توسط ادمین تأیید خواهد شد.</p>
+<footer>GREEN VPN © تمامی حقوق محفوظ است.</footer>
+</div>
+
+<nav>
+<a href="#"><span>⌂</span>خانه</a>
+<a href="#plans"><span>▤</span>اشتراک‌ها</a>
+<a href="#" onclick="alert('پیگیری سفارش پس از اتصال ربات فعال می‌شود')"><span>◷</span>سفارش‌ها</a>
+<a href="#" onclick="alert('پشتیبانی به‌زودی فعال می‌شود')"><span>◉</span>پشتیبانی</a>
+</nav>
+
+<script>
+function choose(plan){
+alert('اشتراک '+plan+' انتخاب شد. بخش پرداخت در مرحله بعد فعال می‌شود.');
+}
+</script>
+</body>
+</html>
